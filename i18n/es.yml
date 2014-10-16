@@ -6,7 +6,7 @@ units:
   imp_gal: galones imperiales (UK)
   Liter: L
   milliliter: mL
-  five_milliter: cucharilla de té/tapón/5 ml
+  five_milliliter: cucharilla de té/tapón/5 ml
   pump_bottle: pumps
   grams: g
   milligrams: mg
@@ -41,18 +41,16 @@ input:
     tooltip: Puedes usar números formateados como 1/8, 1.25, 2,50, or 3
   target: Mi objetivo es
 output:
-  dose: Tu agregado de %1 para tu
-  dose_solution: contenedor, con dosis de %1 para tu
-  dose_end: acuario agregando
+  dose: Tu agregado de %1 para tu %2 acuario agregando
+  dose_solution: Tu agregado de %1 para tu %2 contenedor, con dosis de %3 para tu %4 acuario agregando
   target: Para alcanzar un objetivo de %1 necesitaras agregar %2 de %3 en tu recipiente/acuario de 
-  target_solution: Agregar %1 de esa mezcla en tu acuario de 
-  target_end: para conseguir
+  target_solution: Para alcanzar un objetivo de %1 necesitaras agregar %2 de %3 en tu recipiente. Agregar %4 de esa mezcla en tu acuario de %5 
 warnings:
   solubility: La solubilidad de %1 a temperature ambiente es %2.  Deberas ajustar tu dosis.
   k3po4: El K3PO4 disuelto en una solución tiende a incrementar el pH debido a la naturaleza del KOH, que es una base fuerte. ray-the-pilot explica esto a sus jardineros <a href='http://bit.ly/ev7txA' target='_blank'>en APC</a>
   eddha: Ten presente que el EDDHA puede tenir el agua de rojo incluso usando dosis moderadas.  Puede ver este video de una dosis de 0.2ppm <a href='http://www.youtube.com/watch?v=ZCTu8ClcMKc' target='_blank'>aqui</a>.
   urea: Este producto tiene un porcentage desconocido de N como Urea y NO3.  El calculo y la tabla  de abajo funciona con equivalentes a NO3.
-  cu: Tu dosis de Cu es %1 % de la recomendada para peces sensibles e invertebrados. Puedes considerar reducir tu dosis de %2 por una de %3 <a href='http://y.[petalphile.com/cu' target='_blank'>Mas información acerca de la toxicidad del Cu aqui</a>
+  cu: Tu dosis de Cu es %1 % de la recomendada para peces sensibles e invertebrados. Puedes considerar reducir tu dosis de %2 por una de %3 <a href='http://y.petalphile.com/cu' target='_blank'>Mas información acerca de la toxicidad del Cu aqui</a>
 chart:
   text: Concentraciones relativas %1 para los métodos 
   pmdd: PMDD

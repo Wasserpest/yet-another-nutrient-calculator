@@ -4,19 +4,95 @@
 */
 
 *
- { font-family: "Myriad Pro", Arial, sans-serif; }
+ { font-family: "Myriad Pro", Georgia, sans-serif; }
 
-#yield {
-    margin-left: 15em; 
-    margin-top: 3em;
-    max-width: 70em;
+#container {
+  width: 80%;
+  min-width: 1020px;
+}
+
+#calc {
+    clear:both;
+    margin: 0 auto;
+    width: 1010px;
+    align: center;
   }
 
-fieldset, form, label, legend, submit, div, yanc
- { font-weight:normal;font-size:100%; vertical-align:baseline; }
+#yield {
+    clear:both;
+    margin: 0 auto;
+    float: left;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    width: 650px;
+  }
+
+.sticky #yield {
+    width:650px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+}
+
+.bumpit #yield {
+    clear:both;
+    margin: 0 auto;
+    float: left;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    width: 650px;
+  }
+
+#result {
+    width: 330px;
+    margin: 1 auto;
+    float: right;
+    margin-left: 670px;
+    display: inline-block;
+  } 
+
+#menu {
+  height: 7em;
+}
+
+#title {
+  margin: 0 auto;
+}
+
+#translations ul {
+  margin: 0 auto;
+  text-align: right;
+}
+
+#translations li {
+  font-size:0.9em;
+  display: inline;
+  padding:2;
+  text-align: right;
+}
+
+#yield li {
+  align: center;
+  font-size:0.9em;
+}
+
+#fancy {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 1010px;
+    height: 350px;
+  }
+  
+
+fieldset, label, legend, submit, div, yanc
+ { font-size: 1em; margin: auto; padding: 0;}
+
+form {margin-left: 0; margin: auto; }
 
 #footer
- { padding:0;border:0;font-weight:normal;font-size:0.9em; vertical-align:baseline; text-align: left}
+ { margin-top: 2em; border:0; font-weight:normal;font-size:0.9em; text-align: left; float: bottom; width: 100%; margin-bottom: 10px;}
 
 /* 
 	Structural
@@ -24,14 +100,14 @@ fieldset, form, label, legend, submit, div, yanc
 
 
 fieldset
-	{ margin: 0 0 1.5em 0; padding: 1.4em;  }
+	{ margin: 0; padding: 0; }
 
 legend
 	{ padding: 0 .4em; font-size:1.2em;  }
 
 
 label	 
-	{ float:left; display:block; width: 15em; margin-right:1em; text-align:right;  cursor:hand; }
+	{ float:left; display:block; width: 15em; text-align:right; margin-right: 1em; }
 
 /*
 textarea, input, select, label, button, optgroup
@@ -64,15 +140,15 @@ textarea:focus, input[type="text"]:focus
 	{ border: 2px solid #666; }
 
 select
-	{  background-color: #fff; color: #000; font-weight:normal;font-size:100%; }
+	{  background-color: #fff; color: #000; font-weight:normal;font-size:100%; max-width: 20em;}
 
 input[type="text"]
 	{ border: 1px solid #666; }
 
 input[id="ask"]
-	{  margin-left: 10em; background-color: #fff; color: #000; width:35em; }
-input[id="results"]
-	{  margin-left: 0; background-color: #fff; color: #000; width:330px; }
+	{ background-color: #fff; color: #000; width: 300px; text-align: center;}
+//input[id="results"]
+//	{  margin-left: 0; background-color: #fff; color: #000; width:330px; }
 
 input[type="checkbox"]
 	{ color: #000; }
